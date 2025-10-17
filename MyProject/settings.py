@@ -25,7 +25,9 @@ SECRET_KEY = 'django-insecure-vvsy!n%)+9iit&ms$addc01r%qx%z!+r=o_%!2o6x3c3r*)6-e
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+# In settings.py
+
+ALLOWED_HOSTS = ['http://127.0.0.1:8000/', '127.0.0.1:8000', '127.0.0.1', 'http://192.168.254.135:8000/', '192.168.254.135:8000', '192.168.254.135']
 
 
 # Application definition
@@ -53,7 +55,7 @@ MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
 ]
 
-CORS_ALLOW_ALL_ORIGINS = True 
+CORS_ALLOW_ALL_ORIGINS = True
 
 ROOT_URLCONF = 'MyProject.urls'
 
