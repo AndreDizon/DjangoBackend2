@@ -27,7 +27,7 @@ DEBUG = True
 
 # In settings.py
 
-ALLOWED_HOSTS = ['http://127.0.0.1:8000/', '127.0.0.1:8000', '127.0.0.1', 'http://192.168.254.135:8000/', '192.168.254.135:8000', '192.168.254.135']
+ALLOWED_HOSTS = ['http://127.0.0.1:8000/', '127.0.0.1:8000', '127.0.0.1', 'http://192.168.254.135:8000/', '192.168.254.135:8000', '192.168.254.135','djangobackend2.onrender.com', '127.0.0.1', 'localhost']
 
 
 # Application definition
@@ -128,3 +128,7 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+CSRF_TRUSTED_ORIGINS = [
+    "https://djangobackend2.onrender.com"
+]
